@@ -4,9 +4,9 @@ import { properties } from "@/data/properties";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Luxury Property Listings",
+  title: "Property Listings | Nicole Shlass Real Estate",
   description:
-    "Browse Nicole Shlass's exclusive portfolio of luxury homes, estates, and residences for sale and lease across Greater Los Angeles.",
+    "Browse Nicole Shlass's current and past property listings — condos, lofts, townhouses, and family homes for sale across Toronto and the GTA.",
 };
 
 export default function PropertiesPage() {
@@ -34,7 +34,7 @@ export default function PropertiesPage() {
             Exclusive Listings
           </h1>
           <p className="text-body-lg text-on-surface-variant max-w-xl mx-auto mt-4">
-            Handpicked properties representing the finest in Los Angeles luxury living.
+            Active listings and a track record of results across Toronto and the GTA.
           </p>
         </div>
       </section>

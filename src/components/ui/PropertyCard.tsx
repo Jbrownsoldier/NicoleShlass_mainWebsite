@@ -17,7 +17,7 @@ const tagVariant: Record<string, string> = {
 
 export function PropertyCard({ property, className }: PropertyCardProps) {
   const {
-    id, title, address, city, priceLabel, beds, baths, sqft, type, tag, image,
+    id, title, address, city, priceLabel, beds, bedsLabel, baths, sqft, type, tag, image,
   } = property;
 
   return (
@@ -74,7 +74,7 @@ export function PropertyCard({ property, className }: PropertyCardProps) {
         <div className="flex items-center gap-4 text-on-surface-variant text-body-md">
           <span className="flex items-center gap-1.5">
             <BedDouble size={14} className="text-outline" />
-            {beds} Beds
+            {bedsLabel ?? beds} Beds
           </span>
           <span className="flex items-center gap-1.5">
             <Bath size={14} className="text-outline" />
@@ -82,7 +82,7 @@ export function PropertyCard({ property, className }: PropertyCardProps) {
           </span>
           <span className="flex items-center gap-1.5">
             <Maximize2 size={14} className="text-outline" />
-            {sqft.toLocaleString()} ft²
+            {sqft > 0 ? `${sqft.toLocaleString()} ft²` : "—"}
           </span>
         </div>
 
