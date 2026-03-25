@@ -1,25 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Award, Star, Users, TrendingUp } from "lucide-react";
+import { ArrowRight, Award, Users, Clock } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Nicole Shlass",
   description:
-    "Meet Nicole Shlass — Los Angeles luxury real estate specialist with 18 years of experience, $2.4B+ in sales, and an unwavering commitment to her clients.",
+    "Meet Nicole Shlass — Toronto Sales Representative helping first-time buyers, upsizers, and families find homes that fit their life. 14+ years in the Toronto market.",
 };
 
 const accolades = [
-  { icon: TrendingUp, value: "$2.4B+", label: "Career Sales Volume" },
-  { icon: Award,      value: "Top 1%", label: "Los Angeles Agent Ranking" },
-  { icon: Users,      value: "400+",   label: "Clients Represented" },
-  { icon: Star,       value: "18 Yrs", label: "In the LA Market" },
-];
-
-const press = [
-  { outlet: "Forbes", headline: "The Agents Reshaping Luxury Real Estate" },
-  { outlet: "Architectural Digest", headline: "10 Agents Who Understand Beautiful Homes" },
-  { outlet: "Los Angeles Magazine", headline: "The City's Most Trusted Real Estate Names" },
+  { icon: Clock,  value: "14 Yrs", label: "In the Toronto Market" },
+  { icon: Award,  value: "2011",   label: "Career Start" },
+  { icon: Users,  value: "400+",   label: "Clients Represented" },
+  { icon: Award,  value: "416",    label: "Area Specialist" },
 ];
 
 export default function AboutPage() {
@@ -35,9 +29,10 @@ export default function AboutPage() {
                 Where Precision<br />Meets Passion
               </h1>
               <p className="text-body-lg text-on-surface-variant leading-relaxed">
-                Nicole Shlass has spent nearly two decades mastering the Los Angeles luxury
-                market — earning a reputation for discretion, results, and an editorial
-                attention to detail that her clients describe as unmatched.
+                Nicole Shlass has spent over 14 years helping Toronto buyers, sellers, and
+                families navigate one of Canada&apos;s most dynamic real estate markets —
+                earning a reputation for transparency, dependability, and a deeply
+                personalized approach that her clients describe as unmatched.
               </p>
             </div>
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-ambient">
@@ -82,45 +77,30 @@ export default function AboutPage() {
           </h2>
           <div className="space-y-6 text-body-lg text-on-surface-variant leading-relaxed">
             <p>
-              Nicole began her career in the art world — as a curator at a prominent LA gallery
-              where she developed an eye for the exceptional. When she transitioned to real estate,
-              she brought that same editorial sensibility to how she evaluates, markets, and presents
-              properties. A home, she believes, is more than square footage — it&apos;s a curated life.
+              As a natural people person and relentless question-asker, Nicole loves getting
+              to the heart of what truly matters to her clients. She believes in transparency,
+              dependability, and tailoring the experience to each person she works with.
             </p>
             <p>
-              Over 18 years, she has built a client roster spanning entertainment executives,
-              international investors, and multi-generational family estates. Her approach has
-              never changed: listen deeply, advise honestly, and execute flawlessly.
+              Her clients often tell her they appreciate her responsiveness, honesty, and
+              ability to get them the information they need as fast as possible. One of the
+              most rewarding parts of the job is growing alongside clients as their lives
+              evolve — from first homes to the next chapter.
             </p>
             <p>
-              Nicole is consistently ranked among the top 1% of agents in Greater Los Angeles.
-              She specializes in Beverly Hills, Bel Air, Malibu, Westwood, and the Hollywood Hills
-              — neighborhoods where relationships and reputation determine access.
+              Nicole is especially passionate about helping first-time buyers and upsizers find
+              homes that truly fit their lifestyle and long-term goals. Over the years, those
+              relationships have grown into a strong network of referrals and long-term
+              connections. Her commitment goes far beyond the transaction — she&apos;s here
+              to help clients navigate big decisions with confidence, clarity, and a little
+              bit of fun along the way.
             </p>
             <p>
-              When she&apos;s not closing deals, Nicole sits on the board of the LA Arts Foundation
-              and mentors emerging agents through the city&apos;s leading brokerage network.
+              Outside of work, Nicole spends time with family and friends, helps care for her
+              dad who lives with a traumatic brain injury, explores Toronto&apos;s neighbourhood
+              gems, takes pottery classes, reads a good book, or escapes to her cottage by the
+              lake — her favourite place to recharge.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Press */}
-      <section className="py-24 bg-surface-c-low">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <p className="text-label-lg text-secondary mb-3">AS SEEN IN</p>
-            <h2 className="font-serif text-headline-lg text-on-surface font-semibold">Press & Recognition</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {press.map(({ outlet, headline }) => (
-              <div key={outlet} className="glass-card rounded-2xl p-8 flex flex-col gap-4 shadow-card">
-                <p className="text-label-lg text-secondary">{outlet}</p>
-                <p className="font-serif text-title-lg text-on-surface font-medium leading-snug">
-                  &ldquo;{headline}&rdquo;
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>

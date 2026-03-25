@@ -1,22 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Star, Award, TrendingUp, Users } from "lucide-react";
+import { ArrowRight, Award, TrendingUp, Users, Star } from "lucide-react";
 import { PropertyCard } from "@/components/ui/PropertyCard";
 import { featuredProperties } from "@/data/properties";
-import { testimonials } from "@/data/testimonials";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nicole Shlass — Luxury Real Estate Los Angeles",
+  title: "Nicole Shlass — Real Estate Toronto",
   description:
-    "Los Angeles' premier luxury real estate agent. Discover bespoke buying, selling, and leasing services across Beverly Hills, Bel Air, Malibu, and beyond.",
+    "Toronto real estate agent helping first-time buyers, upsizers, and families find homes that fit their life. Buying, selling, and leasing across Toronto and the GTA.",
 };
 
 const stats = [
-  { icon: TrendingUp, value: "$2.4B+", label: "In Total Sales" },
-  { icon: Award,      value: "18 Yrs", label: "Of Experience" },
+  { icon: Award,      value: "14 Yrs", label: "Of Experience" },
   { icon: Users,      value: "400+",   label: "Clients Served" },
-  { icon: Star,       value: "Top 1%", label: "LA Agent Ranking" },
+  { icon: TrendingUp, value: "416",    label: "Area Specialist" },
+  { icon: Star,       value: "100%",   label: "Client Satisfaction" },
 ];
 
 export default function HomePage() {
@@ -26,7 +25,7 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-end overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=2000&q=85&auto=format"
-          alt="Luxury Los Angeles estate"
+          alt="Toronto home"
           fill
           priority
           sizes="100vw"
@@ -38,7 +37,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 pb-24 w-full">
           <div className="max-w-3xl">
             <p className="text-label-lg text-secondary mb-6 tracking-widest">
-              LOS ANGELES LUXURY REAL ESTATE
+              TORONTO REAL ESTATE
             </p>
             <h1 className="font-serif text-display-lg text-on-surface font-semibold mb-7 leading-tight">
               Your Home.<br />
@@ -47,9 +46,9 @@ export default function HomePage() {
               Delivered.
             </h1>
             <p className="text-body-lg text-on-surface-variant max-w-xl mb-10 leading-relaxed">
-              Nicole Shlass brings an editorial eye and an elite network to every
-              transaction. Whether you&apos;re acquiring, divesting, or leasing — expect
-              nothing less than extraordinary.
+              Nicole Shlass is a Toronto Sales Representative known for her responsiveness,
+              honesty, and commitment to helping clients find homes that truly fit their life.
+              Whether you&apos;re buying, selling, or leasing — she&apos;s with you every step.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -143,7 +142,7 @@ export default function HomePage() {
                 href: "/leasing",
                 label: "Leasing",
                 icon: "🗝",
-                desc: "Premium lease representation for both tenants and landlords across Los Angeles's finest addresses.",
+                desc: "Lease representation for both tenants and landlords across Toronto's best neighbourhoods.",
               },
             ].map(({ href, label, icon, desc }) => (
               <Link
@@ -174,7 +173,7 @@ export default function HomePage() {
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-ambient">
               <Image
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=80&auto=format"
-                alt="Nicole Shlass, Luxury Real Estate Agent"
+                alt="Nicole Shlass, Toronto Real Estate Agent"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-top"
@@ -182,7 +181,7 @@ export default function HomePage() {
               <div className="absolute bottom-6 left-6">
                 <div className="glass rounded-xl px-5 py-4">
                   <p className="font-serif text-title-lg text-on-surface font-semibold">Nicole Shlass</p>
-                  <p className="text-label-md text-outline mt-0.5">Luxury Real Estate Specialist</p>
+                  <p className="text-label-md text-outline mt-0.5">Sales Representative</p>
                 </div>
               </div>
             </div>
@@ -193,15 +192,15 @@ export default function HomePage() {
                 Precision.<br />Discretion.<br />Results.
               </h2>
               <p className="text-body-lg text-on-surface-variant leading-relaxed">
-                With nearly two decades in the Los Angeles luxury market, Nicole Shlass has
-                built a reputation for delivering exceptional outcomes for her clients. Her
-                approach is editorial — every detail curated, every negotiation strategic,
-                every client relationship personal.
+                Since 2011, Nicole Shlass has been helping Toronto buyers, sellers, and
+                families navigate one of Canada&apos;s most dynamic real estate markets.
+                She&apos;s known for her honesty, her responsiveness, and her ability to
+                truly listen to what clients need.
               </p>
               <p className="text-body-lg text-on-surface-variant leading-relaxed">
-                From intimate Bel Air retreats to architectural Malibu compounds, Nicole
-                moves seamlessly across the spectrum of luxury — bringing the same
-                commitment to every transaction.
+                Whether you&apos;re a first-time buyer, a growing family looking to upsize,
+                or someone ready for the next chapter — Nicole brings transparency,
+                dependability, and a personalized approach to every transaction.
               </p>
               <Link
                 href="/about"
@@ -211,37 +210,6 @@ export default function HomePage() {
                 <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── Testimonials ─────────────────────────────────────────────────── */}
-      <section className="py-28 bg-primary-container">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center max-w-xl mx-auto mb-16">
-            <p className="text-label-lg text-secondary mb-3">CLIENT STORIES</p>
-            <h2 className="font-serif text-display-md text-on-surface font-semibold">
-              What Clients Say
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
-              <div key={t.id} className="glass-card rounded-2xl p-8 flex flex-col gap-5 shadow-card">
-                <div className="flex gap-1">
-                  {Array.from({ length: t.rating }).map((_, i) => (
-                    <Star key={i} size={13} className="text-secondary fill-secondary" />
-                  ))}
-                </div>
-                <p className="text-body-lg text-on-surface-variant leading-relaxed italic flex-1">
-                  &ldquo;{t.quote}&rdquo;
-                </p>
-                <div>
-                  <p className="font-serif text-title-md text-on-surface font-semibold">{t.name}</p>
-                  <p className="text-label-md text-outline mt-0.5">{t.role}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>

@@ -4,9 +4,9 @@ import { ArrowRight, Search, FileCheck, Key, Handshake } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Buying a Luxury Home",
+  title: "Buying a Home in Toronto",
   description:
-    "Work with Nicole Shlass to access off-market luxury properties, expert negotiation, and white-glove buyer representation across Los Angeles.",
+    "Work with Nicole Shlass for expert buyer representation, strategic negotiation, and honest guidance throughout your home purchase across Toronto and the GTA.",
 };
 
 const steps = [
@@ -43,7 +43,7 @@ export default function BuyingPage() {
       <section className="relative pt-36 pb-28 overflow-hidden min-h-[70vh] flex items-end">
         <Image
           src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=2000&q=80&auto=format"
-          alt="Luxury home buying"
+          alt="Buying a home in Toronto"
           fill
           priority
           sizes="100vw"
@@ -126,7 +126,7 @@ export default function BuyingPage() {
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-ambient">
               <Image
                 src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=900&q=80&auto=format"
-                alt="Luxury home interior"
+                alt="Home interior"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"

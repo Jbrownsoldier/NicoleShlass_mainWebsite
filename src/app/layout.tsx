@@ -19,33 +19,34 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: "Nicole Shlass — Luxury Real Estate Los Angeles",
-    template: "%s | Nicole Shlass Luxury Real Estate",
+    default: "Nicole Shlass — Real Estate Toronto",
+    template: "%s | Nicole Shlass Real Estate",
   },
   description:
-    "Bespoke real estate representation for discerning buyers, sellers, and lessees across Greater Los Angeles. Specializing in Bel Air, Beverly Hills, Malibu, and Westwood.",
+    "Residential real estate for first-time buyers, upsizers, and families across Toronto and the GTA. Sales Representative at The Boulevard powered by Property.ca.",
   keywords: [
-    "luxury real estate Los Angeles",
-    "Beverly Hills realtor",
-    "Bel Air homes for sale",
-    "Malibu luxury homes",
+    "Toronto real estate",
+    "Toronto realtor",
+    "first time home buyer Toronto",
+    "Toronto homes for sale",
     "Nicole Shlass realtor",
-    "Los Angeles luxury agent",
+    "Toronto real estate agent",
+    "GTA homes for sale",
   ],
   authors: [{ name: "Nicole Shlass" }],
   creator: "Nicole Shlass",
   openGraph: {
     type: "website",
-    locale: "en_US",
-    siteName: "Nicole Shlass Luxury Real Estate",
-    title: "Nicole Shlass — Luxury Real Estate Los Angeles",
+    locale: "en_CA",
+    siteName: "Nicole Shlass Real Estate",
+    title: "Nicole Shlass — Real Estate Toronto",
     description:
-      "Bespoke real estate representation for discerning buyers, sellers, and lessees across Greater Los Angeles.",
+      "Residential real estate for first-time buyers, upsizers, and families across Toronto and the GTA.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nicole Shlass — Luxury Real Estate Los Angeles",
-    description: "Bespoke real estate representation across Greater Los Angeles.",
+    title: "Nicole Shlass — Real Estate Toronto",
+    description: "Residential real estate for first-time buyers and families across Toronto and the GTA.",
   },
   robots: {
     index: true,

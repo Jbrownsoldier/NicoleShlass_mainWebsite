@@ -4,9 +4,9 @@ import { ArrowRight, Camera, BarChart3, Globe, CheckCircle } from "lucide-react"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Selling Your Luxury Home",
+  title: "Selling Your Home in Toronto",
   description:
-    "Nicole Shlass delivers commanding marketing, elite buyer networks, and precise pricing strategies to sell your Los Angeles luxury home above asking.",
+    "Nicole Shlass delivers strategic marketing, precise pricing, and an extensive buyer network to help you sell your Toronto home with confidence.",
 };
 
 const pillars = [
@@ -39,7 +39,7 @@ export default function SellingPage() {
       <section className="relative pt-36 pb-28 overflow-hidden min-h-[70vh] flex items-end">
         <Image
           src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=2000&q=80&auto=format"
-          alt="Luxury home for sale"
+          alt="Home for sale in Toronto"
           fill
           priority
           sizes="100vw"
@@ -66,10 +66,10 @@ export default function SellingPage() {
         <div className="max-w-7xl mx-auto px-6 py-12">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {[
-              { value: "98%",    label: "List-to-Sale Ratio" },
-              { value: "21",     label: "Avg. Days on Market" },
-              { value: "$2.4B+", label: "Closed Volume" },
-              { value: "100%",   label: "Client Satisfaction" },
+              { value: "98%",   label: "List-to-Sale Ratio" },
+              { value: "21",    label: "Avg. Days on Market" },
+              { value: "14+",   label: "Years in Toronto" },
+              { value: "100%",  label: "Client Satisfaction" },
             ].map(({ value, label }) => (
               <div key={label}>
                 <p className="font-serif text-display-md text-secondary font-semibold">{value}</p>

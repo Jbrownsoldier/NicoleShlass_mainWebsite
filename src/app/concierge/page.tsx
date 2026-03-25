@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Concierge — Private Consultation",
   description:
-    "Request a private consultation with Nicole Shlass. Discreet, tailored real estate advisory for buyers, sellers, and lessees across Los Angeles.",
+    "Get in touch with Nicole Shlass. Personalized real estate guidance for buyers, sellers, and tenants across Toronto and the GTA.",
 };
 
 export default function ConciergePage() {
@@ -57,24 +57,24 @@ export default function ConciergePage() {
                 </h2>
                 <ul className="space-y-6">
                   <li>
-                    <a href="tel:+13105550100" className="flex items-start gap-4 group">
+                    <a href="tel:+14162716316" className="flex items-start gap-4 group">
                       <div className="w-11 h-11 rounded-full bg-secondary/10 flex items-center justify-center shrink-0 group-hover:bg-secondary/20 transition-colors">
                         <Phone size={18} className="text-secondary" />
                       </div>
                       <div>
                         <p className="text-label-md text-outline mb-0.5">Phone</p>
-                        <p className="text-title-md text-on-surface group-hover:text-secondary transition-colors">(310) 555-0100</p>
+                        <p className="text-title-md text-on-surface group-hover:text-secondary transition-colors">416-271-6316</p>
                       </div>
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:nicole@nicoleshlass.com" className="flex items-start gap-4 group">
+                    <a href="mailto:nicole@nicoleshlassrealestate.ca" className="flex items-start gap-4 group">
                       <div className="w-11 h-11 rounded-full bg-secondary/10 flex items-center justify-center shrink-0 group-hover:bg-secondary/20 transition-colors">
                         <Mail size={18} className="text-secondary" />
                       </div>
                       <div>
                         <p className="text-label-md text-outline mb-0.5">Email</p>
-                        <p className="text-title-md text-on-surface group-hover:text-secondary transition-colors">nicole@nicoleshlass.com</p>
+                        <p className="text-title-md text-on-surface group-hover:text-secondary transition-colors">nicole@nicoleshlassrealestate.ca</p>
                       </div>
                     </a>
                   </li>
@@ -85,8 +85,8 @@ export default function ConciergePage() {
                       </div>
                       <div>
                         <p className="text-label-md text-outline mb-0.5">Office</p>
-                        <p className="text-title-md text-on-surface">9454 Wilshire Blvd, Suite 300</p>
-                        <p className="text-body-md text-on-surface-variant">Beverly Hills, CA 90212</p>
+                        <p className="text-title-md text-on-surface">235 Clinton St</p>
+                        <p className="text-body-md text-on-surface-variant">Toronto, ON M6G 2Y5</p>
                       </div>
                     </div>
                   </li>
@@ -97,7 +97,7 @@ export default function ConciergePage() {
                       </div>
                       <div>
                         <p className="text-label-md text-outline mb-0.5">Availability</p>
-                        <p className="text-title-md text-on-surface">Mon – Sat, 8am – 7pm PT</p>
+                        <p className="text-title-md text-on-surface">Mon – Sat, 9am – 6pm ET</p>
                         <p className="text-body-md text-on-surface-variant">Urgent inquiries accommodated 7 days</p>
                       </div>
                     </div>

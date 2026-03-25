@@ -6,9 +6,9 @@ import { properties } from "@/data/properties";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Luxury Leasing",
+  title: "Leasing in Toronto",
   description:
-    "Premium lease representation for tenants and landlords. Access exclusive Los Angeles luxury residences through Nicole Shlass.",
+    "Lease representation for tenants and landlords across Toronto. Nicole Shlass helps you find or fill the right rental with care and expertise.",
 };
 
 const leaseProperties = properties.filter((p) => p.type === "lease");
@@ -30,7 +30,7 @@ export default function LeasingPage() {
         <div className="absolute inset-0 gradient-overlay-bottom" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
           <div className="max-w-2xl">
-            <p className="text-label-lg text-secondary mb-4">LUXURY LEASING</p>
+            <p className="text-label-lg text-secondary mb-4">LEASING IN TORONTO</p>
             <h1 className="font-serif text-display-md text-on-surface font-semibold mb-5">
               Live the Life.<br />On Your Terms.
             </h1>

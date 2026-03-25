@@ -44,7 +44,7 @@ export function Nav() {
               Nicole Shlass
             </span>
             <span className="text-label-sm text-outline tracking-widest">
-              LUXURY REAL ESTATE
+              REAL ESTATE
             </span>
           </Link>
 
